@@ -8,11 +8,7 @@ keywords:
     - meteor
     - phantomjs
 script: |
-    sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com E5CEAB0AC5F1CA2A
-    sudo apt-get -y update
-    sudo apt-get -y upgrade
-    sudo apt-get -y clean
-    cat ~/.bashrc
+    sudo apt-get -y install build-essential
     nvm install stable
     nvm use stable
     nvm alias default stable
