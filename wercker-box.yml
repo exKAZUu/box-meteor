@@ -12,9 +12,7 @@ script: |
     sudo apt-get -y update
     sudo apt-get -y upgrade
     sudo apt-get -y clean
-    cd $HOME
-    ls -al
-    source ~/.bashrc
+    cat ~/.bashrc
     nvm install stable
     nvm use stable
     nvm alias default stable
