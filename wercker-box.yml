@@ -8,6 +8,9 @@ keywords:
     - meteor
     - phantomjs
 script: |
+    cd $HOME
+    sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe"
+    sudo apt-get update
     sudo apt-get -y install build-essential
     nvm install stable
     nvm use stable
