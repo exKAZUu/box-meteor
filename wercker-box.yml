@@ -9,6 +9,7 @@ keywords:
     - phantomjs
 script: |
     cd $HOME
+    sudo apt-get install software-properties-common
     sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe"
     sudo apt-get update
     sudo apt-get -y install build-essential
