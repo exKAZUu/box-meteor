@@ -22,4 +22,3 @@ script: |
     cd phantomjs
     git checkout 2.0
     yes | ./build.sh
-    curl https://install.meteor.com/ | sh
