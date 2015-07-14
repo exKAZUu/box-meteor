@@ -1,6 +1,6 @@
 name: meteor
-version: 0.0.2
-inherits: exkazuu/meteor@0.0.1
+version: 0.0.3
+inherits: exkazuu/meteor@0.0.2
 type: main
 platform: ubuntu@14.04
 keywords:
@@ -9,16 +9,9 @@ keywords:
     - phantomjs
 script: |
     cd $HOME
-    sudo apt-get -y update
-    sudo apt-get -y install software-properties-common
-    sudo apt-get -y install python-software-properties
-    sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe"
-    sudo apt-get -y update
-    sudo apt-get -y install build-essential
-    nvm install stable
-    nvm use stable
-    nvm alias default stable
-    git clone git://github.com/ariya/phantomjs.git
-    cd phantomjs
-    git checkout 2.0
-    yes | ./build.sh
+    sudo mv phantomjs/bin/phantomjs /usr/local/bin/
+    curl https://install.meteor.com/ | sh
+    nvm version
+    node -v
+    phantomjs -v
+    meteor --version
