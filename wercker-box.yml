@@ -22,7 +22,7 @@ script: |
     cd phantomjs
     git checkout 2.0
     yes | ./build.sh
-    mv bin/phantomjs /usr/local/bin/
+    sudo mv bin/phantomjs /usr/local/bin/
     curl https://install.meteor.com/ | sh
     nvm version
     node -v
