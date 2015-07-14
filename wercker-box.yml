@@ -22,9 +22,4 @@ script: |
     cd phantomjs
     git checkout 2.0
     yes | ./build.sh
-    sudo mv bin/phantomjs /usr/local/bin/
     curl https://install.meteor.com/ | sh
-    nvm version
-    node -v
-    phantomjs -v
-    meteor --version
