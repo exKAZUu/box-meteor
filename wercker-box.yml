@@ -1,17 +1,18 @@
 name: meteor
-version: 0.0.3
-inherits: exkazuu/meteor@0.0.2
+version: 0.0.4
+inherits: exkazuu/meteor@0.0.3
 type: main
 platform: ubuntu@14.04
 keywords:
     - nodejs
     - meteor
     - phantomjs
+    - heroku
 script: |
     cd $HOME
-    sudo mv phantomjs/bin/phantomjs /usr/local/bin/
-    curl https://install.meteor.com/ | sh
+    wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
     nvm version
     node -v
     phantomjs -v
     meteor --version
+    heroku --version
