@@ -1,6 +1,6 @@
 name: meteor
-version: 0.0.4
-inherits: exkazuu/meteor@0.0.3
+version: 0.0.5
+inherits: exkazuu/meteor@0.0.4
 type: main
 platform: ubuntu@14.04
 keywords:
@@ -14,7 +14,13 @@ script: |
     sudo apt-get -y install wget
     sudo apt-get -y clean
     cd $HOME
-    wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+    meteor update
+    heroku update
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+    nvm install stable
+    nvm use stable
+    nvm alias default stable
+    npm install velocity-cli -g
     nvm version
     node -v
     phantomjs -v
