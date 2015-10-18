@@ -1,6 +1,6 @@
 name: meteor
 version: 0.0.5
-inherits: exkazuu/meteor@0.0.4
+inherits: exkazuu/meteor@0.0.3
 type: main
 platform: ubuntu@14.04
 keywords:
