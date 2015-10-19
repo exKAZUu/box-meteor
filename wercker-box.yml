@@ -11,7 +11,7 @@ keywords:
 script: |
     sudo apt-get -y update
     sudo apt-get -y upgrade
-    sudo apt-get -y install wget
+    sudo apt-get -y install wget ruby
     sudo apt-get -y clean
     cd $HOME
     wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
