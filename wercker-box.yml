@@ -24,4 +24,3 @@ script: |
     node -v
     phantomjs -v
     meteor --version
-    heroku --version
